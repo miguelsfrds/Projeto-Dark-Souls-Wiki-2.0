@@ -15,7 +15,7 @@
 
 ## Execução do site:
 
-- Ao acessar o https://projeto-dark-souls-wiki.netlify.app, você será levado a uma página de login. Logo de cara, é possível entrar na sua conta ou, se for sua primeira visita, criar uma nova. Na hora de se cadastrar, você pode escolher entre dez classes icônicas do universo de Dark Souls, cada uma com suas próprias características e estilos de jogo. Ao logar você será redirecionado para a Wiki do jogo com textos e imagens interativas que mostram mais informações ao serem clicadas.
+- Ao acessar o https://miguelsfrds.github.io/Projeto-Dark-Souls-Wiki-2.0/, você será levado a uma página de login. Logo de cara, é possível entrar na sua conta ou, se for sua primeira visita, criar uma nova. Na hora de se cadastrar, você pode escolher entre dez classes icônicas do universo de Dark Souls, cada uma com suas próprias características e estilos de jogo. Ao logar você será redirecionado para a Wiki do jogo com textos e imagens interativas que mostram mais informações ao serem clicadas.
 
 ## Principais páginas e arquivos:
 ### Arquivos HTML e CSS
