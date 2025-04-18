@@ -1,0 +1,107 @@
+/*Mudando a fonte do site*/
+@font-face {
+    font-family: "Dark Souls font";
+    src: url("../fonts/OptimusPrincepsSemiBold.ttf") format("truetype");
+}
+/*Resetando as margins e padding e deixando a imagem do background sempre ajustada com o tamanho da tela*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*Trocando a imagem do background e fazendo ela cobrir a tela inteira sem repetir*/
+body{
+    background-image: url("../imagens/complementos/background-dark-souls-login.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Dark Souls font";
+    color: white;
+}
+/*Logo Dark Souls Remastered*/
+.conteudo_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+/*Borda das informações de login*/
+.borda_login {
+    border: 2px solid white;
+    width: 370px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px); /*deixando o fundo desfocado*/
+    box-shadow: 0px 9px 25px black; 
+    padding: 20px;
+}
+/*Resetando a margin do header login e deixando ele centralizado*/
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+/*Deixando todas as informações do formulario centralizadas*/
+.formulario_login {
+    text-align: center;
+}
+/*Personalizando o campo de usuario e senha*/
+.username, .password {
+    background-color: #E8E8E8;
+    width: 350px;
+    height: 34px;
+    margin-top: 20px;
+    border: none;
+    padding: 9px;
+    
+}
+/*Dando um espaço na parte de baixo do campo de senha*/
+.password{
+    margin-bottom: 15px;
+}
+/*Personalizando o link de "esqueci a senha"*/
+.esqueci_a_senha{
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 10px;
+}
+/*Personalizando o botão de login e criar_conta*/
+.botao_login, .botao_criar_conta {
+    background-color: #E8E8E8;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 250px;
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    cursor: pointer;
+}
+/*Fazendo as informações do site serem responsivas*/
+@media screen and (max-width: 805px){
+    .logo{
+        padding-top: 80px;
+        padding-bottom: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    .borda_login{
+        max-width: 80%;
+    }
+    .username, .password{
+        max-width: 80%;
+    }
+    .esqueci_a_senha{
+        max-width: 90%;
+    }
+}

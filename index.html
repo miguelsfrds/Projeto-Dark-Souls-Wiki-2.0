@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/CSS/login.css">
+    <link rel="shortcut icon" href="/src/imagens/complementos/cebolao-favicon.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <!-- Logo Dark Souls -->
+    <div class="conteudo_logo">
+        <img src="./src/imagens/complementos/Dark Souls Remastered Logo.png"
+            alt="Dark Souls Logo" height="150px" class="logo">
+    </div>
+    <!-- Login -->
+    <div class="borda_login">
+        <h1>Login</h1>
+        <form method="get" action="site-dark-souls-wiki.html" class="formulario_login">
+            <!-- Usuário -->
+            <label for="isuario"></label>
+            <input type="text" name="usuario" id="isuario" placeholder="Username" required minlength="5" maxlength="12" autocomplete="off" class="username">
+            <br>
+            <!-- Senha -->
+            <label for="isenha"></label>
+            <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8" maxlength="15" autocomplete="off" class="password">
+            <br>
+            <!--Equeci a senha-->
+            <a href="" class="esqueci_a_senha">Esqueci a senha</a>
+            <!-- Botão Login -->
+            <input type="submit" value="Login" class="botao_login">
+        </form>
+        <!--Botão Registrar-->
+        <form action="criar_conta.html" method="get">
+            <input type="submit" value="Criar Conta" class="botao_criar_conta">
+        </form> 
+    </div>
+</body>
+</html>

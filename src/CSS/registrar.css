@@ -1,0 +1,90 @@
+/*Mudando a fonte do site*/
+@font-face {
+    font-family: "Dark Souls font";
+    src: url("../fonts/OptimusPrincepsSemiBold.ttf") format(truetype);
+}
+/*Resetando as margins e padding e deixando a imagem do background sempre ajustada com o tamanho da tela*/
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+/*Trocando a imagem do background e fazendo ela cobrir a tela inteira sem repetir*/
+body{
+    background-image: url("../imagens/complementos/background-dark-souls-registrar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Dark Souls font";
+    color: white;
+}
+/*Logo Dark Souls Remastered*/
+.conteudo_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+/*Deixando ele centralizado o header Criar Conta centralizado dentro da borda*/
+h1{
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+/*Borda das informações de Criar Conta*/
+.borda_criar_conta{
+    border: 2px solid white;
+    width: 370px;
+    height: 460px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+/*Deixando todas as informações do formulario centralizadas*/
+.formulario_criar_conta{
+    text-align: center;
+}
+/*Personalizando o campo de usuario, senha e email*/
+.username, .password, .email{
+    background-color: #E8E8E8;
+    width: 280px;
+    height: 34px;
+    margin-top: 20px;
+    border: none;
+    padding:9px;
+}
+/*Personalizando o campo de sexo, classes e criar conta*/
+.sexo, .classes, .criar_conta{
+    background-color: #E8E8E8;
+    margin-top:20px ;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    cursor: pointer; /*deixando o curso do mouse com a mãozinha de clicar*/
+}
+/*Fazendo as informações do site serem responsivas*/
+@media screen and (max-width: 805px){
+    .logo{
+        padding-bottom: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    .borda_criar_conta{
+
+        max-width: 80%;
+    }
+    .username, .password, .email, .sexo, .classes, .criar_conta{
+        max-width: 80%;
+    }
+    
+}
+

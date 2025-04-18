@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Dark Souls font";
+    src: url("../fonts/OptimusPrincepsSemiBold.ttf") format(truetype);
+}
+/*FAZER AS TABELAS MOBILE SUMIREM*/
+.tabela_de_classes_mobile,.tabela_de_bosses_mobile{
+    display: none;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,.nome_classes, .nome_bosses{
+    color: #AB966F;
+}
+p{
+    color: #b4b2b0;
+}
+/*CORPO DO SITE COM BACKGROUND*/
+body{
+    background-color: black;
+    background-image: url("../imagens/complementos/background-dark-souls-site.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    overflow-x: auto;
+    font-family: "Dark Souls font";
+    color: white;
+}
+h3{
+    text-align: center;
+}
+/*"BORDA" DAS INFORMAÇÕES*/
+.borda_site{
+    background-image: url("../imagens/complementos/background_borda.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*LOGO DO JOGO*/
+.conteudo_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/*RESUMO SOBRE O JOGO*/
+.resumo{
+    width: 900px;
+    text-align: justify;
+    margin: auto;
+}
+
+/*LINHAS HORIZONTAIS BRANCAS*/
+#borda_imagem{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(".//imagens/complementos/linha horizontal.png") 30 round;
+}
+
+/*PARTE SOBRE O UNDEAD(MORTO-VIVO)*/
+.undead{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 780px;/*largura do resumo sobre o Undead*/
+    margin-left: 200px;
+    
+}
+.borda_undead{
+    border: 2px solid #AB966F;
+}
+.resumo_undead{
+    position:relative;
+    top: -6px;
+    text-align: justify;
+}
+
+/*PARTE DAS CLASSES*/
+.classes{
+    width: 950px;
+    text-align: center;
+    margin: auto;
+}
+.tabela_de_classes{
+    margin: auto;
+    width: 90px;
+}
+td{
+    padding-top: 10px;
+    text-align: center;
+}
+.imagem_classes{
+    height: 240px;
+    margin-right: 5px;
+}
+.resumo_classes{
+    padding: 20px;
+    margin: auto;
+    text-align: justify;
+    width: 950px;
+}
+
+/*PARTE DOS BOSSES*/
+.bosses{
+    text-align: center;
+    width: 950px;
+    margin: auto;
+}
+.tabela_de_bosses{
+    width: 900px;
+    margin: auto;
+}
+.imagem_bosses{
+    height: 200px;
+}
+.resumo_bosses{
+    padding: 20px;
+    margin: auto;
+    text-align: justify;
+    width: 950px;
+}
+/*mudando o tamanho da fonte*/
+.resumo, .resumo_undead, .resumo_classes, .resumo_bosses{
+    font-size: 18px;
+}
+/*Fazendo as informações do site serem responsivas*/
+@media screen and (max-width:768px){
+    .borda_site{
+        background-image: url("../imagens/complementos/background_borda-celular.png");
+        width: 100%;
+        background-position: left center;
+    }
+    .tabela_de_classes, .tabela_de_bosses{
+        display: none;
+    }
+    .tabela_de_classes_mobile, .tabela_de_bosses_mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        max-width: 100%;
+        height: auto;
+    }
+    .resumo{
+        width: 100%;
+    }
+    .undead{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: auto;
+        width: 100%;
+    }
+    .resumo_undead, .resumo_bosses, .resumo_classes{
+        width: 90%;
+    }
+    .classes , .bosses{
+        text-align: center;
+        width: 90%;
+    }
+}

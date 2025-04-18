@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/CSS/registrar.css">
+    <link rel="shortcut icon" href="/src/imagens/complementos/cebolao-favicon.png" type="image/x-icon">
+    <title>Registrar</title>
+</head>
+<body>
+    <!-- Logo Dark Souls -->
+    <div class="conteudo_logo">
+        <img src="/src/imagens/complementos/Dark Souls Remastered Logo.png" alt="Dark Souls Logo" height="150px" class="logo">
+    </div>
+    <div class="borda_criar_conta">
+        <h1>Criar conta</h1>
+        <form action="index.html" class="formulario_criar_conta">
+            <!--Email-->
+            <input type="email" name="email" id="iemail" class="email" placeholder="Email" required autocomplete="off">
+            <!--Usuario-->
+            <input type="text" name="usuario" id="isuario" placeholder="Username" required minlength="5" maxlength="12" autocomplete="off" class="username">
+            <br>
+            <!--Senha-->
+            <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8" maxlength="15" autocomplete="off" class="password">
+            <br>
+            <!--Sexo-->
+            <select name="sexo" id="isexo" class="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <br>
+            <!--Classes-->
+            <select name="clsses" id="iclasses" class="classes">
+                <option value="guerreiro">Guerreiro</option>
+                <option value="cavaleiro">Cavaleiro</option>
+                <option value="andarilho">Andarilho</option>
+                <option value="ladrao">Ladrão</option>
+                <option value="bandido">Bandido</option>
+                <option value="assasino">Assasino</option>
+                <option value="feiticeiro">Feiticeiro</option>
+                <option value="piromante">Piromante</option>
+                <option value="clerico">Clerico</option>
+                <option value="depravado">Depravado</option>
+            </select>
+            <!--Botão Criar Conta-->
+            <input type="submit" value="Criar Conta" class="criar_conta">
+        </form>
+    </div>
+</body>
+</html>
