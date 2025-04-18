@@ -65,7 +65,7 @@ h3{
 #borda_imagem{
     border: 10px solid transparent;
     padding: 15px;
-    border-image: url(".//imagens/complementos/linha horizontal.png") 30 round;
+    border-image: url("../imagens/complementos/linha horizontal.png") 30 round;
 }
 
 /*PARTE SOBRE O UNDEAD(MORTO-VIVO)*/
